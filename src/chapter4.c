@@ -2,7 +2,7 @@
 #include "math.h"
 
 //输入两个实数，按代数值由小到大的顺序输出这两个数
-int example2() {
+int example_4_2() {
     float a, b, t;
     scanf("%f,%f", &a, &b);
     /*
@@ -20,7 +20,7 @@ int example2() {
 }
 
 //输入3个数a,b,c，要求按由小到大的顺序输出
-int example3() {
+int example_4_3() {
     float a, b, c, t;
     scanf("%f,%f,%f", &a, &b, &c);
     if (a > b) {
@@ -42,7 +42,7 @@ int example3() {
 }
 
 //要求按照考试成绩的等级输出百分制分数段，A等为85分以上，B等为70~84分，C等为60~69分，D等为60分以下。成绩的等级由键盘输入。
-int example6() {
+int example_4_6() {
     char grade;
     scanf("%c", &grade);
     printf("Your score:");
@@ -66,7 +66,7 @@ int example6() {
 }
 
 //*用switch语句处理菜单命令。在许多应用程序中，用菜单对流程进行控制，例如从键盘输入一个'A'或'a'字符，就会执行A操作，输入一个'B'或'b'字符，就会执行B操作。可以按以下思路编写程序。
-int example7() {
+int example_4_7() {
     void action1(int, int), action2(int, int);
     char ch;
     int a = 15, b = 23;
@@ -96,7 +96,7 @@ void action2(int x, int y) {
 //写一程序，判断某一年是否为闰年
 //1.能被4整除而不能被100整除
 //2.能被400整除
-int example8() {
+int example_4_8() {
     int year;
     printf("enter year:");
     scanf("%d", &year);
@@ -107,10 +107,14 @@ int example8() {
 }
 
 //求ax2+bx+c=0方程的解
-void example9() {
-
+void example_4_9() {
+    double a, b, c, disc, x1, x2, realpart, imagepart;
+    scanf("%lf,%lf", &a, &b, &c);
+    printf("The equation");
+    if (fabs(a) <= 1e-6)
+        printf("is not a quadrati");
 }
 
-int main() {
-    example7();
+void example_4_10() {
+
 }

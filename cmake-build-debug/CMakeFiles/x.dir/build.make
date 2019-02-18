@@ -56,27 +56,27 @@ include CMakeFiles/x.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/x.dir/flags.make
 
-CMakeFiles/x.dir/chapter4.c.obj: CMakeFiles/x.dir/flags.make
-CMakeFiles/x.dir/chapter4.c.obj: ../chapter4.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:\workspace\github\c\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/x.dir/chapter4.c.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\x.dir\chapter4.c.obj   -c F:\workspace\github\c\chapter4.c
+CMakeFiles/x.dir/main.c.obj: CMakeFiles/x.dir/flags.make
+CMakeFiles/x.dir/main.c.obj: ../main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:\workspace\github\c\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/x.dir/main.c.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\x.dir\main.c.obj   -c F:\workspace\github\c\main.c
 
-CMakeFiles/x.dir/chapter4.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/x.dir/chapter4.c.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E F:\workspace\github\c\chapter4.c > CMakeFiles\x.dir\chapter4.c.i
+CMakeFiles/x.dir/main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/x.dir/main.c.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E F:\workspace\github\c\main.c > CMakeFiles\x.dir\main.c.i
 
-CMakeFiles/x.dir/chapter4.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/x.dir/chapter4.c.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S F:\workspace\github\c\chapter4.c -o CMakeFiles\x.dir\chapter4.c.s
+CMakeFiles/x.dir/main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/x.dir/main.c.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S F:\workspace\github\c\main.c -o CMakeFiles\x.dir\main.c.s
 
 # Object files for target x
 x_OBJECTS = \
-"CMakeFiles/x.dir/chapter4.c.obj"
+"CMakeFiles/x.dir/main.c.obj"
 
 # External object files for target x
 x_EXTERNAL_OBJECTS =
 
-x.exe: CMakeFiles/x.dir/chapter4.c.obj
+x.exe: CMakeFiles/x.dir/main.c.obj
 x.exe: CMakeFiles/x.dir/build.make
 x.exe: CMakeFiles/x.dir/linklibs.rsp
 x.exe: CMakeFiles/x.dir/objects1.rsp
