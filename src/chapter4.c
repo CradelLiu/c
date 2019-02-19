@@ -65,9 +65,17 @@ int example_4_6() {
     return 0;
 }
 
-//*用switch语句处理菜单命令。在许多应用程序中，用菜单对流程进行控制，例如从键盘输入一个'A'或'a'字符，就会执行A操作，输入一个'B'或'b'字符，就会执行B操作。可以按以下思路编写程序。
+//用switch语句处理菜单命令。在许多应用程序中，用菜单对流程进行控制，例如从键盘输入一个'A'或'a'字符，就会执行A操作，输入一个'B'或'b'字符，就会执行B操作。可以按以下思路编写程序。
+void action1(int x, int y) {
+    printf("x+y=%d\n", x + y);
+}
+
+void action2(int x, int y) {
+    printf("x*y=%d\n", x * y);
+}
+
 int example_4_7() {
-    void action1(int, int), action2(int, int);
+    //void action1(int, int), action2(int, int); //函数声明，如果函数定义在后面，需要先声明
     char ch;
     int a = 15, b = 23;
     ch = getchar();
@@ -85,13 +93,7 @@ int example_4_7() {
     }
 }
 
-void action1(int x, int y) {
-    printf("x+y=%d\n", x + y);
-}
 
-void action2(int x, int y) {
-    printf("x*y=%d\n", x * y);
-}
 
 //写一程序，判断某一年是否为闰年
 //1.能被4整除而不能被100整除

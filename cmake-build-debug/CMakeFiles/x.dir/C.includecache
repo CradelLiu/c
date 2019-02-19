@@ -6,3 +6,25 @@
 
 #IncludeRegexTransform: 
 
+D:/workspace/github/c/main.c
+src/chapter4.c
+D:/workspace/github/c/src/chapter4.c
+src/chapter5.c
+D:/workspace/github/c/src/chapter5.c
+src/chapter6.c
+D:/workspace/github/c/src/chapter6.c
+
+D:/workspace/github/c/src/chapter4.c
+stdio.h
+-
+math.h
+D:/workspace/github/c/src/math.h
+
+D:/workspace/github/c/src/chapter5.c
+stdio.h
+D:/workspace/github/c/src/stdio.h
+math.h
+D:/workspace/github/c/src/math.h
+
+D:/workspace/github/c/src/chapter6.c
+

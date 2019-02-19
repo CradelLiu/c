@@ -1,6 +1,7 @@
 #include "src/chapter4.c"
 #include "src/chapter5.c"
+#include "src/chapter6.c"
 
 int main() {
-    example_5_1();
+    example_6_1();
 }
