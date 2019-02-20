@@ -1,7 +1,4 @@
-﻿#include <stdio.h>
-#include "math.h"
-
-//输入两个实数，按代数值由小到大的顺序输出这两个数
+﻿//输入两个实数，按代数值由小到大的顺序输出这两个数
 int example_4_2() {
     float a, b, t;
     scanf("%f,%f", &a, &b);
