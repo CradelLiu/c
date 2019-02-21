@@ -7,18 +7,22 @@
 #IncludeRegexTransform: 
 
 D:/workspace/github/c/main.c
+stdio.h
+-
+math.h
+D:/workspace/github/c/math.h
+src/sort.c
+D:/workspace/github/c/src/sort.c
 src/chapter4.c
 D:/workspace/github/c/src/chapter4.c
 src/chapter5.c
 D:/workspace/github/c/src/chapter5.c
 src/chapter6.c
 D:/workspace/github/c/src/chapter6.c
+src/chapter7.c
+D:/workspace/github/c/src/chapter7.c
 
 D:/workspace/github/c/src/chapter4.c
-stdio.h
--
-math.h
-D:/workspace/github/c/src/math.h
 
 D:/workspace/github/c/src/chapter5.c
 stdio.h
@@ -27,4 +31,10 @@ math.h
 D:/workspace/github/c/src/math.h
 
 D:/workspace/github/c/src/chapter6.c
+string.h
+D:/workspace/github/c/src/string.h
+
+D:/workspace/github/c/src/chapter7.c
+
+D:/workspace/github/c/src/sort.c
 

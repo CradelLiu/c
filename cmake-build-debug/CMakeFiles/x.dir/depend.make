@@ -5,4 +5,6 @@ CMakeFiles/x.dir/main.c.obj: ../main.c
 CMakeFiles/x.dir/main.c.obj: ../src/chapter4.c
 CMakeFiles/x.dir/main.c.obj: ../src/chapter5.c
 CMakeFiles/x.dir/main.c.obj: ../src/chapter6.c
+CMakeFiles/x.dir/main.c.obj: ../src/chapter7.c
+CMakeFiles/x.dir/main.c.obj: ../src/sort.c
 

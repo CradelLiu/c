@@ -28,7 +28,7 @@ void example_6_3() {
     for (int i = 0; i < 10; i++)
         scanf("%d", &a[i]);
     printf("\n");
-    bubbleSort(a);
+    bubbleSort(a, sizeof(a) / sizeof(a[0]));
     printf("the sorted numbers:\n");
     for (int i = 0; i <= 9; i++)
         printf("%d", a[i]);
