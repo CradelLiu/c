@@ -35,15 +35,15 @@ int LocateElem(SqList L, int e) {
     return 0;
 }
 
-bool p18q1(SqList L, int min) {
+bool p18q1(SqList L, int *min) {
     if (L.length <= 0) {
         printf("出错");
         return false;
     }
-    min = L.data[0];
+    *min = L.data[0];
     for (int i = 1; i < L.length; i++)
-        if (L.data[i] < min) {
-            min = L.data[i];
+        if (L.data[i] < *min) {
+            *min = L.data[i];
             L.data[i] = L.data[L.length - 1];
             L.length--;
         }
@@ -53,4 +53,24 @@ bool p18q1(SqList L, int min) {
 void p18q2(SqList L) {
     for (int i = 0; i < L.length / 2; i++)
         swap(L.data, i, L.length - 1 - i);
+    printArr(L.data, L.length);
+}
+
+void p18q3(SqList L, int x) {
+    int k = 0;
+    for (int i = 0; i < L.length; i++)
+        if (L.data[i] != x) {
+            L.data[k] == L.data[i];
+            k++;
+        }
+    L.length == k;
+}
+
+bool p18q4(SqList L, int s, int t) {
+    if (s >= t || L.length == 0) return false;
+    bubbleSort(L.data, L.length);
+    for (int i = s - 1; i < t; i++)
+        L.data[i] = L.data[t + (s - 1 - i)];
+    L.length -= t - s;
+    printArr(L.data, L.length);
 }

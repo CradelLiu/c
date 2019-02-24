@@ -1,5 +1,5 @@
 void printArr(int arr[], int len) {
-    printf("The sorted array:\n");
+    printf("\nThe sorted array:\n");
     for (int i = 0; i < len; i++)
         printf("%d\t", arr[i]);
 }

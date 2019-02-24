@@ -4,18 +4,22 @@
 
 #include "src/dataStructure/sort.c"
 
+//C语言
 #include "src/basic/chapter4.c"
 #include "src/basic/chapter5.c"
 #include "src/basic/chapter6.c"
 #include "src/basic/chapter7.c"
 
+//数据结构
 #include "src/dataStructure/chapter2.c"
 
-int arr[] = {12, 13, 23, 14, 16, 11};
+int testArr[] = {12, 13, 23, 14, 16, 11};
 
 int main() {
     SqList L;
-    for (int i = 0; i < sizeof(arr) / sizeof(arr[0]); i++)
-        L.data[i] = arr[i];
-    p18q2(L);
+    L.length = sizeof(testArr) / sizeof(testArr[0]);
+    for (int i = 0; i < L.length; i++)
+        L.data[i] = testArr[i];
+
+    p18q4(L, 2, 3);
 }
