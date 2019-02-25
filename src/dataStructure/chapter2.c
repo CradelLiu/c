@@ -60,17 +60,41 @@ void p18q3(SqList L, int x) {
     int k = 0;
     for (int i = 0; i < L.length; i++)
         if (L.data[i] != x) {
-            L.data[k] == L.data[i];
+            L.data[k] = L.data[i];
             k++;
         }
-    L.length == k;
+    L.length = k;
 }
 
 bool p18q4(SqList L, int s, int t) {
     if (s >= t || L.length == 0) return false;
     bubbleSort(L.data, L.length);
-    for (int i = s - 1; i < t; i++)
-        L.data[i] = L.data[t + (s - 1 - i)];
-    L.length -= t - s;
+
+    int i, j; //i是待删元素的起始下标 j是待删元素的最后一个下标+1
+    //定位i的值
+    for (i = 0; i < L.length && L.data[i] < s; i++);
+    if (i == L.length) return false; //如果s比所有元素都大 说明没有元素可删
+    //定位j的值
+    for (j = i; i < L.length && L.data[i] <= t; j++);
+    for (; j < L.length; i++, j++)
+        L.data[i] = L.data[j];
+
+    L.length = i;
     printArr(L.data, L.length);
+    return true;
+}
+
+bool p18q5(SqList L, int s, int t) {
+    if (s >= t || L.length == 0) return false;
+
+    int k = 0;
+    for (int i = 0; i < L.length; i++)
+        if (s <= L.data[i] && L.data <= t)
+            k++;
+        else
+            L.data[i - k] = L.data[i];
+
+    L.length -= k;
+    printArr(L.data, L.length);
+    return true;
 }
