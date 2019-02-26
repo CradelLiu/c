@@ -21,5 +21,5 @@ int main() {
     for (int i = 0; i < L.length; i++)
         L.data[i] = testArr[i];
 
-    printf("%d", 6 < 5);
+    p18q8(L, 3);
 }

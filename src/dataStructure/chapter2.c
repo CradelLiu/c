@@ -98,3 +98,43 @@ bool p18q5(SqList L, int s, int t) {
     printArr(L.data, L.length);
     return true;
 }
+
+bool p18q6(SqList L) {
+    if (L.length == 0) return false;
+    //i指向有序顺序表的最后一项
+    int i, j;
+    for (i = 0, j = 1; j < L.length; j++)
+        if (L.data[i] != L.data[j])
+            L.data[++i] = L.data[j];
+    L.length = i + 1;
+    return true;
+}
+
+bool p18q7(SqList A, SqList B, SqList C) {
+    if (A.length + B.length > C.length) return false;
+    int a = 0, b = 0, c = 0;
+    while (a < A.length && b < B.length)
+        C.data[c++] = A.data[a++] < B.data[b++] ? A.data[a] : B.data[b];
+    while (a < A.length)
+        C.data[c++] = A.data[a++];
+    while (b < B.length)
+        C.data[c++] = B.data[b++];
+    C.length = c;
+    return true;
+}
+
+bool p18q8(SqList L, int m) {
+    for (int i = 0; i < L.length / 2; i++)
+        swap(L.data, i, L.length - 1 - i);
+    printArr(L.data, L.length);
+    for (int i = 0; i < m / 2; i++)
+        swap(L.data, i, m - 1 - i);
+    printArr(L.data, L.length);
+    for (int i = L.length - 1; i > m + m / 2; i--)
+        swap(L.data, L.length - 1, m);
+    printArr(L.data, L.length);
+}
+
+void p18q9(SqList L, int x){
+
+}
