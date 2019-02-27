@@ -2,7 +2,10 @@
 #include "stdbool.h"
 #include "math.h"
 
+//排序
 #include "src/dataStructure/sort.c"
+//查找
+#include "src/dataStructure/search.c"
 
 //C语言
 #include "src/basic/chapter4.c"
@@ -21,5 +24,5 @@ int main() {
     for (int i = 0; i < L.length; i++)
         L.data[i] = testArr[i];
 
-    p18q8(L, 3);
+    p18q9(L, 33);
 }

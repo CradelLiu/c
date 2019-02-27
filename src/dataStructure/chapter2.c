@@ -135,6 +135,18 @@ bool p18q8(SqList L, int m) {
     printArr(L.data, L.length);
 }
 
-void p18q9(SqList L, int x){
-
+void p18q9(SqList L, int x) {
+    int result = binarySearch(L.data, L.length, x);
+    if (result != -1 && result + 1 < L.length)
+        swap(L.data, result, result + 1);
+    else
+        for (int i = L.length - 1; i >= 0; i--) {
+            if (x >= L.data[i]) {
+                L.data[i + 1] = x;
+                L.length++;
+                break;
+            } else
+                L.data[i + 1] = L.data[i];
+        }
+    printArr(L.data, L.length);
 }
