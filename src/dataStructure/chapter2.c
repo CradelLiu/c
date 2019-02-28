@@ -150,3 +150,26 @@ void p18q9(SqList L, int x) {
         }
     printArr(L.data, L.length);
 }
+
+//数组每一项元素循环左移p位（超过尽头接到后面）
+//最优解原理：左侧p个元素逆置，后面n-p个元素也逆置，然后整个数组逆置
+//时间复杂度：O(n) 空间复杂度：O(1)
+void p18q10(SqList L, int p) {
+    for (int i = 0; i < p / 2; i++)
+        swap(L.data, i, p - 1 - i);
+    printArr(L.data, L.length);
+    for (int i = p; i < p + (L.length - p) / 2; i++)
+        swap(L.data, i, p + L.length - 1 - i);
+    printArr(L.data, L.length);
+    for (int i = 0; i < L.length / 2; i++)
+        swap(L.data, i, L.length - 1 - i);
+    printArr(L.data, L.length);
+}
+
+void p18q11(SqList A, SqList B, SqList C) {
+    bubbleSort(A.data, A.length);
+    bubbleSort(B.data, B.length);
+
+    p18q7(A, B, C);
+    printf("%d", C.data[C.length / 2]);
+}

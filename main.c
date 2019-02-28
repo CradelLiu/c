@@ -24,5 +24,5 @@ int main() {
     for (int i = 0; i < L.length; i++)
         L.data[i] = testArr[i];
 
-    p18q9(L, 33);
+    p18q11(L, L, L);
 }
