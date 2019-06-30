@@ -14,6 +14,7 @@
 #include "src/basic/chapter7.c"
 
 //数据结构
+#include "src/dataStructure/linearList/sequenceList.c"
 #include "src/dataStructure/chapter2.c"
 
 int testArr[] = {12, 13, 23, 14, 16, 11};
